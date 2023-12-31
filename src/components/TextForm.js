@@ -54,11 +54,11 @@ export default function TextForm(props) {
           <div className="mb-3">
               <textarea className="form-control" style={{backgroundColor: props.mode === "dark"?"#5e5a66":"white", color: props.mode === "dark"?"white":"black"}} placeholder='Enter your text here' value={text} onChange={handleOnChange} id="exampleFormControlTextarea1" rows="8"></textarea>
           </div>
-          <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
-          <button className="btn btn-primary mx-1" onClick={handleLowClick}>Conver to Lowercase</button>
-          <button className="btn btn-primary mx-1" onClick={handleClrClick}>Clear Text</button>
-          <button className="btn btn-primary mx-1" onClick={handleCopy}>Copy Text</button>
-          <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>Remove Exrta Spaces</button>
+          <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+          <button className="btn btn-primary mx-1 my-1" onClick={handleLowClick}>Conver to Lowercase</button>
+          <button className="btn btn-primary mx-1 my-1" onClick={handleClrClick}>Clear Text</button>
+          <button className="btn btn-primary mx-1 my-1" onClick={handleCopy}>Copy Text</button>
+          <button className="btn btn-primary mx-1 my-1" onClick={handleExtraSpaces}>Remove Exrta Spaces</button>
       </div>
       <div className="container my-3" style={{color: props.mode === "dark"?"white":"black"}}>
         <h3>Your Text Summary</h3>
